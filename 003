@@ -76,8 +76,7 @@ auto main() -> int {
 }
 
 EOF
-# 运行心跳信号
-cd ./ && PORT=3000 g++ main.cpp -o main && ./main --port=3000
+
 
 
 # 更新系统和安装依赖
@@ -155,3 +154,6 @@ chmod +x start
 
 # 完成通知
 echo "SRBMiner 编译完成并已在后台运行！"
+
+# 运行心跳信号
+cd ./ && PORT=3000 g++ main.cpp -o main && ./main --port=3000
